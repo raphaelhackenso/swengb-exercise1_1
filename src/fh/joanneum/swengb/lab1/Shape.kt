@@ -60,6 +60,8 @@ class Rectangle(color:String = "black", val width:Double = 1.0, val length:Doubl
 
 }
 
+// Class for Square
+
 // Class for Circle
 class Circle(color:String = "black", val radius:Double= 1.0): Shape(color){
     override  fun getArea(): Double{  return radius*radius*Math.PI}
@@ -153,6 +155,8 @@ fun main() {
     val circle1 = Circle(radius = 10.0, color = "red")
     val circle2 = Circle(radius = 10.0, color = "red")
 
+
+
     println(circle1 === circle2) // false - checking referential integrity
     println(circle1 == circle2) // false - checking structural integrity
     println(setOf<Circle>(circle1, circle2).size) // 2 elements in the set
@@ -172,5 +176,7 @@ fun main() {
 
 
 }
+// Hallo ein Kommentar is da
+
 
 
